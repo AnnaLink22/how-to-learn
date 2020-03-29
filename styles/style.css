@@ -21,8 +21,8 @@
     width: 183px;
     height: 32px;
 }
-
 .logo_place_header {
+    background-image: url('../images/logo.svg');
     position: absolute;
     top: 30px;
     left: 64px;
@@ -30,7 +30,7 @@
 }
 
 .header__title {
-    width: 730px;
+    max-width: 730px;
     align-self: center;
     margin: 64px;
     color: #000;
@@ -40,7 +40,7 @@
 }
 
 .header__subtitle {
-    width: 388px;
+    max-width: 388px;
     position: absolute;
     margin-left: 64px;
     bottom: 30px;
@@ -79,8 +79,6 @@
 
 
 .description {
-    display: flex;
-    justify-content: center;
     padding-top: 100px;
 }
 
@@ -97,9 +95,6 @@
     width: 175px;
     display: flex;
     align-items: flex-start;
-}
-
-.two-columns__brief-text {
     color: #2f80ed;
     font-size: 18px;
     line-height: 1.2;
@@ -115,19 +110,15 @@
 }
 
 .two-columns__paragraph {
-    margin-bottom: 30px;
-}
-
-.two-columns__paragraph:last-of-type {
-    margin-bottom: 0px;
-}
-
-.two-columns__paragraph-text {
-    margin: 0;
+    margin: 0 0 30px;
     padding: 0;
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
+}
+
+.two-columns__paragraph:last-of-type {
+    margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -184,10 +175,10 @@
 }
 
 .table__heading {
-font-size: 24px;
-line-height: 1.15;
-font-weight: bold;
-margin: 0 0 20px;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bold;
+    margin: 0 0 20px;
 }
 
 .table__text {
@@ -252,6 +243,7 @@ margin: 0 0 20px;
     bottom: 0;
     width: 867px;
     height: 637px;
+    background-image: url('../images/feinman.png');
 }
 
 /* Table Kaufman */
@@ -261,11 +253,11 @@ margin: 0 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
     padding: 90px 0;
     background-color: #1f1f1f;
     position: relative;
     color: #fff;
+    overflow: hidden;
 }
 
 .table_theme_dark {
@@ -283,7 +275,6 @@ margin: 0 0 20px;
     background-image: url('../images/triangle.svg');
     width: 877px;
     height: 877px;
-    overflow: hidden;
     position: absolute;
     top: 0;
     right: -210px;
@@ -318,6 +309,8 @@ margin: 0 0 20px;
 .logo_place_footer {
     width: 183px;
     height: 35px;
+    background-image: url('../images/logo_white.svg');
+    background-size: cover;
 }
 
 .footer__author {
@@ -342,7 +335,7 @@ margin: 0 0 20px;
     justify-content: left;
 }
 
-.footer__column-links_text {
+.footer__column-link {
     text-decoration: none;
     color: #fff;
     line-height: 30px;
