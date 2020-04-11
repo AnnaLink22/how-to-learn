@@ -2,6 +2,8 @@
 
 @import url(./__iframe/video__iframe.css);
 
+@import url(./__iframe-border/video__iframe-border.css);
+
 .video{
     display: flex;
     flex-direction: column;
